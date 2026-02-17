@@ -47,7 +47,7 @@ const stream = fs.createReadStream('1GB-movie.mp4');
 
 ## 🎯 Core Concepts
 
-### 1. **Chunks (टुकड़े)**
+### 1. **Chunks**
 
 Data is broken into small pieces called **chunks**.
 
@@ -62,7 +62,7 @@ Chunks: ["Hello", " ", "World"]
 - Use less memory
 - Start showing results faster
 
-### 2. **Buffer (अस्थायी भंडारण)**
+### 2. **Buffer**
 
 A temporary storage area where chunks wait before processing.
 
@@ -75,7 +75,7 @@ Producer → [Buffer: 16KB] → Consumer
 - A waiting room at a doctor's office
 - People (data) wait here before being called (processed)
 
-### 3. **Flow Control (प्रवाह नियंत्रण)**
+### 3. **Flow Control**
 
 Managing the speed of data flow so nothing gets overwhelmed.
 
@@ -91,7 +91,7 @@ Fast Producer → Slow Consumer
 
 Node.js has **4 types** of streams. Let's understand each with real examples.
 
-### 1. Readable Stream (पढ़ने योग्य)
+### 1. Readable Stream
 
 **What it does:** Provides data that you can read
 
@@ -121,7 +121,7 @@ readStream.on('data', (chunk) => {
 
 ---
 
-### 2. Writable Stream (लिखने योग्य)
+### 2. Writable Stream
 
 **What it does:** Accepts data that you can write to
 
@@ -150,7 +150,7 @@ writeStream.end(); // Done writing
 
 ---
 
-### 3. Duplex Stream (दोनों तरफ़ा)
+### 3. Duplex Stream
 
 **What it does:** Both readable AND writable (independent)
 
@@ -182,7 +182,7 @@ socket.on('data', (data) => {
 
 ---
 
-### 4. Transform Stream (रूपांतरण)
+### 4. Transform Stream
 
 **What it does:** Reads data, modifies it, then writes it
 
