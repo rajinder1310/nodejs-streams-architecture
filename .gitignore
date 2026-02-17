@@ -2,3 +2,12 @@ node_modules
 dist
 .env
 .DS_Store
+
+# Files created today
+files.zip
+large_file.txt
+README_STREAMS.md
+streams_1_fundamentals.js
+streams_2_pipes_pipelines.js
+streams_3_backpressure.js
+streams_4_implementations.js
